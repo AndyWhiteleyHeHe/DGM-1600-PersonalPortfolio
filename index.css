@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: aquamarine;
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: #bf6b92;
+    position: fixed;
+}
+
+.nav-list{
+    display: flex;
+    margin-right: 1rem;
+    list-style-type: none;
+}
+.nav-list a {
+    display: block;
+    padding: 1.5rem;
+    font-size: xx-large;
+    color: #dddddd;
+}
+
+.nav-list a:hover {
+    background-color: black;
+}
+
+#welcome-section {
+    background-image: url("images/clouds.gif");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+}
+
+.projects-section-header {
+    justify-content: center;
+    flex-wrap: center;
+    display: flex;
+    color: #d4d119;
+    background-color: cyan;
+}
+
+.projects-grid {
+    padding: 1.5 rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ff8d0b;
+}
+
+.project-tile {
+    margin: 6rem;
+}
+
+figcaption {
+    text-align: center;
+    font-size: x-large;
+    color: #d4d119;
+}
+
+#contact-section {
+    height: 50 vh;
+    background-color: rosybrown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-section h1 {
+    font-size: 3.5rem;
+    margin-top: 2 rem;
+}
+
+#contact-section p {
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+#contact-section div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    color: #000000;
+
+}
+
+#contact-section div a {
+    font-size: x-large;
+    margin-bottom: 5 rem;
+    transition: transform 0.3s ease-out;
+    color: #000000;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+#contact-section div a:hover {
+    transform: translateY(-8px);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 3 rem;
+    font-size: .5 rem;
+    background-color: slategray;
+}
+
+@media (max-width: 75em) {
+    section {
+        color: #bf6b92;
+    }
+}
+
+@media (max-width: 60em) {
+    section {
+        color: #bf6b92;
+    }
+}
