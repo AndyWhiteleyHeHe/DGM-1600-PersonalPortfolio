@@ -54,4 +54,4 @@ function findLastNumber(url){
     }
     return url.slice(start, end)
 }
-cgetLastNumber('https://swapi.co/api/people/18/')
+function getLastNumber('https://swapi.co/api/people/18/')
