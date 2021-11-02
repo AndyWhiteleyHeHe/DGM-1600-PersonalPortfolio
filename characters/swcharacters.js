@@ -1,4 +1,5 @@
 import { people } from '../data/people.js'
+import { removeChildren } from '../utils/index.js'
 
 const mainContent = document.querySelector('#main')
 
@@ -28,7 +29,7 @@ const otherCharcters = people.filter{(person) =>
 }
 
 function populationDOM(characters) {
-
+    removeChildren(characters)
     people.forEach(element) => {
         const charFigure = document.createElement('figure')
         const charImg = document.createElement('img')
@@ -45,7 +46,7 @@ charFigure.appendChild(charCaption)
 charFigure.appendChild(CharacterData)
 })
 
-function findLastNumber(url){
+function getLastNumber(url){
     let end = url,lastIndexOf('/')
     let start = end =2 
     console.log(url.charAt(start))
