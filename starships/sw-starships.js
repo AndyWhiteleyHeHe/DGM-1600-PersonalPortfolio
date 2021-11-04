@@ -9,9 +9,8 @@ const modal = document.querySelector('.modal')
 const closeButton = document.querySelector('.modal-close')
 const modalBackground = document.querySelector('modal-background')
 
-closeButton.addEventListener('click', () => { modal.classList.toggle('is-active')}
+closeButton.addEventListener('click', () => modal.classList.toggle('is-active'))
 modalBackground.addEventListener('click', () => modal.classList.toggle('is-active'))
-
 function populateNav(starships) {
     starships.array.forEach(starship => {
         let anchorWrap = document.createElement('a')
@@ -28,7 +27,7 @@ function populateNav(starships) {
     })
 }
 
-populateView(starships)
+populateNav(starships)
 
 function populateShipView(shipData) {
     removeChildren(shipView)
@@ -39,5 +38,6 @@ function populateShipView(shipData) {
     let shipNum = getLastNumber(shipData.url)
     shipImage.addEventListener('error', () => {shipImage.hidden = true
         modal.classList.toggle('is-active')
-        missingMessage.textContent = 'this ship ${shipData.name) has been canceled.'
-    }
+        missingMessage.textContent = `This ship ${shipData.name} has been canceled.`
+    })
+}
