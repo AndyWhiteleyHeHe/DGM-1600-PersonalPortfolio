@@ -6,7 +6,7 @@
 header {
     display: flex;
     justify-content: space-around;
-    background-color: darkgray;
+    background-color: rgb(231, 109, 109);
     padding: 2em 0;
 }
 
@@ -32,6 +32,7 @@ button {
 }
 
 button:hover {
-    background-color: darkgreen;
+    background-color: rgba(8, 168, 8, 0.925);
     
 }
+

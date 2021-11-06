@@ -14,11 +14,30 @@
 section {
     display: flex;
     width: 100%;
-    background-color: darkgrey;
+    background-color: burlywood;
 }
 
 .box {
-    background-color: darkgrey;
+    background-color: peachpuff;
     font-size: x-large;
     justify-content: center;
+}
+
+header {
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: skyblue;
+    justify-content: center;
+}
+
+footer {
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: skyblue;
+    font-size: medium;
+}
+nav {  a:hover {
+      color: rgba: 25, 26, 27, 20;
+    }
+    
 }
