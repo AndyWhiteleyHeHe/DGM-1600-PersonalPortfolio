@@ -1,4 +1,4 @@
-import {films} from '../data/films.js'
+import { films } from '../data/films.js'
 import { getLastNumber } from '../utils/index.js'
 
 let filmList = document.querySelector('#filmlist')
@@ -12,7 +12,7 @@ for (let i = 0; i < films.length; i++) {
     const foundFilm = films.find(film => {
         const convertedString = parseInt(getLastNumber(film.url), 10)
         return convertedString === (i + 1)
-    }
+    })
 
 
     console.log(foundFilm)
