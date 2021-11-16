@@ -23,3 +23,4 @@ for (let i = 0; i < films.length; i++) {
     figure.appendChild(figCaption)
     figure.appendChild(figure)
 }
+
