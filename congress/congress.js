@@ -30,3 +30,17 @@ function populateSenatorDiv(simpleSenators) {
         senatorDiv.appendChild(senFigure)
     })
 }
+
+const filterSenators = (prop,value) == {
+    return senators.filter(senator => senator(prop) === value)
+}
+
+console.log(filterSenators('party','R'))
+
+const filterSenators = (prop,value) => SimplifiedSenators
+
+const mostSeniorSenator = SimplifiedSenators().reduce()
+
+
+
+populateSenatorDiv(SimplifiedSenators{senators})
