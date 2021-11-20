@@ -8,7 +8,7 @@ async function getAPIData(url) {
     }
 }
 
-get getAPIData(`https://pokeapi.co/api/v2/pokedemon/24`)
+get getAPIData(`https://pokeapi.co/api/v2/pokemon/25`)
 .then((data) => {
     console.log(data)
     populatePokeCards(data)
